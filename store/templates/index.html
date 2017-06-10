@@ -1,0 +1,483 @@
+{% extends "base.html" %}
+
+
+<div id="content" role="main" class="no-padding">
+        {% block content %}
+
+            <div id="revslider-container">
+                <div id="revslider">
+                    <ul>
+                        <li data-transition="slideleft" data-slotamount="8" data-masterspeed="800" data-title="Next" data-thumb="{{ url_for ('static', filename='images/homesliders/shop/banner1.png')}}">
+                            <!-- background image -->
+                            <img src="{{ url_for ('static', filename='images/revslider/dummy.png')}}"  alt="slidebg1" data-lazyload="{{ url_for ('static', filename='images/homesliders/shop/banner1.png')}}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle customin customout"
+                                data-x="center"
+                                data-y="167"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="500"
+                                style="z-index: 6; text-shadow: #000000 0 0 4px;">Всё что вам нужно уже есть у нас
+                            </div>
+
+                            <div class="tp-caption rev-title customin customout"
+                                data-x="center"
+                                data-y="220"
+                                data-speed="1100"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-start="1300"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6; text-shadow: #000000 0 0 4px;">Просто посмотрите
+                            </div>
+
+
+                            <div class="tp-caption rev-text text-right customin customout"
+                                data-x="center"
+                                data-y="305"
+                                data-speed ="1200"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-start="1600"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 12; text-shadow: #000000 0 0 4px;">Огромный выбор техники напрямую от производителя.
+                            </div>
+
+                            <div class="tp-caption rev-btn customin customout"
+                                data-x="center"
+                                data-y="391"
+                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="1200"
+                                data-start="2200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                            </div>
+                        </li>
+                        <li data-transition="slideleft" data-slotamount="8" data-masterspeed="800" data-title="Next" data-thumb="{{ url_for ('static', filename='images/homesliders/shop/banner2.jpg')}}">
+                            <!-- background image -->
+                            <img src="{{ url_for ('static', filename='images/revslider/dummy.png')}}"  alt="slidebg1" data-lazyload="{{ url_for ('static', filename='images/homesliders/shop/banner2.jpg')}}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle lft ltt"
+                                data-x="center"
+                                data-y="167"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="400"
+                                style="z-index: 10; text-shadow: #000000 0 0 4px;">Фирменная оболочка
+                            </div>
+
+                            <div class="tp-caption rev-title lfl ltl"
+                                data-x="center"
+                                data-y="220"
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6; text-shadow: #000000 0 0 4px;">MIUI 7 / MIUI 8
+                            </div>
+
+
+                            <div class="tp-caption rev-text lfr ltr"
+                                data-x="center"
+                                data-y="305"
+                                data-speed ="1000"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-start="1200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 14; text-shadow: #000000 0 0 4px;">Не оставит равнодушным никого.
+                            </div>
+
+                            <div class="tp-caption rev-btn lfb ltb"
+                                data-x="center"
+                                data-y="391"
+                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="1000"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                            </div>
+                        </li>
+                        <li data-transition="slideleft" data-slotamount="8" data-masterspeed="800" data-title="Next" data-thumb="{{ url_for ('static', filename='images/homesliders/shop/banner3.jpg')}}">
+                            <!-- background image -->
+                            <img src="{{ url_for ('static', filename='images/revslider/dummy.png')}}"  alt="slidebg3" data-lazyload="{{ url_for ('static', filename='images/homesliders/shop/banner3.jpg')}}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle customin customout"
+                                data-x="center"
+                                data-y="167"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="500"
+                                style="z-index: 10; text-shadow: #000000 0 0 4px;">Современные технологии
+                            </div>
+
+                            <div class="tp-caption rev-title customin customout"
+                                data-x="center"
+                                data-y="220"
+                                data-speed="1100"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-start="1300"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6; text-shadow: #000000 0 0 4px;">Xia_mi
+                            </div>
+
+
+                            <div class="tp-caption rev-text customin customout"
+                                data-x="center"
+                                data-y="305"
+                                data-speed ="1200"
+                                data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-start="1600"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 14; text-shadow: #000000 0 0 4px;">Пора попробовать то, что вы давно хотели, но не решались.
+                            </div>
+
+                            <div class="tp-caption rev-btn customin customout"
+                                data-x="center"
+                                data-y="391"
+                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="1200"
+                                data-start="2200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End #revslider -->
+            </div><!-- End #revslider-container -->
+
+            <div class="mb70 mb60-xs"></div><!-- End space -->
+
+            <div class="container">
+                <h2 class="title-border custom text-center mb50"><span>Почему стоит выбрать Xiaomi ?</span></h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-umbrella"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">Высокое качество</h3>
+
+                                <p>Высокое качество товаров компании Xiaomi зарекомендовало себя по всему миру в разных странах.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-anchor"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">На базе ОС Android</h3>
+
+                                <p>В качестве базовой оболочки в устройствах компании Xiaomi используется операционная система Android, дающая полную свободу действий.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-doc"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">Начать с чистого листа</h3>
+
+                                <p>Как только вы станете обладателем Xiaomi, вы начнёте с чистого листа. Такого раньше у вас не было.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+                </div><!-- End .row -->
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-magic-wand"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">Всё что вам нужно.</h3>
+
+                                <p>Всё, что вам когда-либо было нужно, всё чего вы когда-либо хотели, но не могли им воспользоваться, всё это можно получить, всем этим можно пользоваться в xiaomi.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-energy"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">Высокая производительность</h3>
+
+                                <p>В продукции компании Xiaomi используется передовые тыхнологии. Мощнейшие процессоры и сверхпроизводительные чипсеты. И всё это за самую низкую стоимость по сравнению с конкурентами.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+
+                    <div class="col-sm-4">
+                        <div class="service vertical service-hover-bg custom text-center service-box">
+
+                            <span class="service-icon"><i class="icon-home"></i></span>
+                            <div class="service-content">
+                                <h3 class="service-title title-underblock custom text-uppercase text-center">Большой выбор</h3>
+
+                                <p>Действительно огромный выбор. Каждый сможет подобрать под себя то, что ему действительно подойдёт.</p>
+                            </div><!-- End .service-content -->
+
+                        </div><!-- End .service -->
+                    </div><!-- End .col-sm-4 -->
+                </div><!-- End .row -->
+                <div class="mb10 hidden-xs"></div><!-- space -->
+            </div><!-- End .container -->
+
+            <div class="container">
+                <div class="divider bg-divider mb80">
+                    <span class="i fa fa-coffee"></span>
+                </div>
+            </div><!-- End .divider -->
+
+            <div class="container">
+                <h2 class="title-border custom text-center mb50"><span>Наши товары</span></h2>
+
+                <ul id="portfolio-filter" class="text-center">
+                    <li class="active"><a href="index.html#" data-filter="*">Все</a></li>
+                    <li><a href="index.html#" data-filter=".mi5">Mi5</a></li>
+                    <li><a href="index.html#" data-filter=".mi5s">Mi5s</a></li>
+                    <li><a href="index.html#" data-filter=".redmi4">Redmi 4</a></li>
+                    <li><a href="index.html#" data-filter=".mi6">Mi6</a></li>
+                </ul>
+
+                <div class="row gap-row">
+                    <div id="portfolio-item-container" class="custombg max-col-4 popup-gallery no-margin">
+
+                        <div class="portfolio-item portfolio-image-zoom mi5">
+                            <figure>
+                                <a href="{{ url_for ('static', filename='images/index_images/item1.jpg')}}" class="zoom-item" title="Portfolio Item Description"><img src="{{ url_for ('static', filename='images/index_images/item1.jpg')}}" alt="portfolio item name" class="img-responsive"></a>
+                            </figure>
+                            <div class="portfolio-meta">
+                                <h3 class="portfolio-title"><a href="single-portfolio.html">Xiaomi mi5</a></h3>
+                                <div class="portfolio-tags"><a href="index.html#">Design</a>, <a href="index.html#">Mi series</a></div>
+                                <a class="portfolio-favourite" href="index.html#" title="Добавить в корзину">
+                                    <i class="icon-basket"></i>
+                                    <span>8</span>
+                                </a>
+                            </div><!-- End .portfolio-meta -->
+                        </div><!-- End .portfolio-item -->
+
+                        <div class="portfolio-item portfolio-image-zoom mi5s">
+                            <figure>
+                                <a href="{{ url_for ('static', filename='images/index_images/item2.jpg')}}" class="zoom-item" title="Portfolio Item Description"><img src="{{ url_for ('static', filename='images/index_images/item2.jpg')}}" alt="portfolio item name" class="img-responsive"></a>
+                            </figure>
+                            <div class="portfolio-meta">
+                                <h3 class="portfolio-title"><a href="single-portfolio.html">Xiaomi Mi 5S</a></h3>
+                                <div class="portfolio-tags"><a href="index.html#">Design</a>, <a href="index.html#">Mi series</a></div>
+                                <a class="portfolio-favourite" href="index.html#" title="Добавить в корзину">
+                                    <i class="icon-basket"></i>
+                                    <span>8</span>
+                                </a>
+                            </div><!-- End .portfolio-meta -->
+                        </div><!-- End .portfolio-item -->
+
+                        <div class="portfolio-item portfolio-image-zoom redmi4">
+                            <figure>
+                                <a href="{{ url_for ('static', filename='images/index_images/item3.jpg')}}" class="zoom-item" title="Portfolio Item Description"><img src="{{ url_for ('static', filename='images/index_images/item3.jpg')}}" alt="portfolio item name" class="img-responsive"></a>
+                            </figure>
+                            <div class="portfolio-meta">
+                                <h3 class="portfolio-title"><a href="single-portfolio.html">Xiaomi Redmi 4</a></h3>
+                                <div class="portfolio-tags"><a href="index.html#">Design</a>, <a href="index.html#">Redmi series</a></div>
+                                <a class="portfolio-favourite" href="index.html#" title="Добавить в корзину">
+                                    <i class="icon-basket"></i>
+                                    <span>8</span>
+                                </a>
+                            </div><!-- End .portfolio-meta -->
+                        </div><!-- End .portfolio-item -->
+
+
+                        <div class="portfolio-item portfolio-image-zoom mi6">
+                            <figure>
+                                <a href="{{ url_for ('static', filename='images/index_images/item7.jpg')}}" class="zoom-item" title="Portfolio Item Description"><img src="{{ url_for ('static', filename='images/index_images/item7.jpg')}}" alt="portfolio item name" class="img-responsive"></a>
+                            </figure>
+                            <div class="portfolio-meta">
+                                <h3 class="portfolio-title"><a href="single-portfolio.html">Xiaomi Mi6</a></h3>
+                                <div class="portfolio-tags"><a href="index.html#">Design</a>, <a href="index.html#">Mi series</a></div>
+                                <a class="portfolio-favourite" href="index.html#" title="Добавить в корзину">
+                                    <i class="icon-basket"></i>
+                                    <span>8</span>
+                                </a>
+                            </div><!-- End .portfolio-meta -->
+                        </div><!-- End .portfolio-item -->
+
+
+                    </div><!-- End #portfolio-item-container -->
+                </div><!-- End .gap-row -->
+            </div><!-- End .container -->
+
+            <div class="container">
+                <div class="divider bg-divider mt80 mb80">
+                    <span class="i fa fa-coffee"></span>
+                </div>
+            </div><!-- End .divider -->
+
+            <div class="container">
+                <h2 class="title-border custom text-center mb50"><span>Наша команда</span></h2>
+
+                <div class="owl-carousel team-carousel-index9 center-nav center-nav-animate custom-nav">
+                    <div class="team-member boxed-member team-animate-social text-center">
+                        <figure>
+                            <img src="{{ url_for ('static', filename='images/team/david.jpg')}}" alt="Давид" class="img-responsive">
+                            <figcaption>
+                                <div class="social-icons text-center">
+                                    <a href="index.html#" class="social-icon icon-facebook add-tooltip" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-google-plus add-tooltip" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-skype add-tooltip" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-linkedin add-tooltip" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div><!-- End .social-icons -->
+                            </figcaption>
+                        </figure>
+                        <h3>Дмитрий Игнатьев</h3>
+                        <p class="member-desc">(Исполнительный директор)</p>
+                    </div><!-- End .team-member -->
+
+                    <div class="team-member boxed-member team-animate-social text-center">
+                        <figure>
+                            <img src="{{ url_for ('static', filename='images/team/jessica.jpg')}}" alt="Анастасия" class="img-responsive">
+                            <figcaption>
+                                <div class="social-icons text-center">
+                                    <a href="index.html#" class="social-icon icon-facebook add-tooltip" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-google-plus add-tooltip" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-skype add-tooltip" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-linkedin add-tooltip" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div><!-- End .social-icons -->
+                            </figcaption>
+                        </figure>
+                        <h3>Анастасия Дмитриева.</h3>
+                        <p class="member-desc">(Менеджер)</p>
+                    </div><!-- End .team-member -->
+
+                    <div class="team-member boxed-member team-animate-social text-center">
+                        <figure>
+                            <img src="{{ url_for ('static', filename='images/team/steve.jpg')}}" alt="Степан" class="img-responsive">
+                            <figcaption>
+                                <div class="social-icons text-center">
+                                    <a href="index.html#" class="social-icon icon-facebook add-tooltip" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-google-plus add-tooltip" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-skype add-tooltip" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-linkedin add-tooltip" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div><!-- End .social-icons -->
+                            </figcaption>
+                        </figure>
+                        <h3>Константин Лавров.</h3>
+                        <p class="member-desc">(Менеджер)</p>
+                    </div><!-- End .team-member -->
+
+                    <div class="team-member boxed-member team-animate-social text-center">
+                        <figure>
+                            <img src="{{ url_for ('static', filename='images/team/barbara.jpg')}}" alt="Наталья" class="img-responsive">
+                            <figcaption>
+                                <div class="social-icons text-center">
+                                    <a href="index.html#" class="social-icon icon-facebook add-tooltip" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-google-plus add-tooltip" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-skype add-tooltip" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-linkedin add-tooltip" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div><!-- End .social-icons -->
+                            </figcaption>
+                        </figure>
+                        <h3>Екатерина Ловских </h3>
+                        <p class="member-desc">(Ассистент руководителя)</p>
+                    </div><!-- End .team-member -->
+
+                    <div class="team-member boxed-member team-animate-social text-center">
+                        <figure>
+                            <img src="{{ url_for ('static', filename='images/team/eric.jpg')}}" alt="Eric" class="img-responsive">
+                            <figcaption>
+                                <div class="social-icons text-center">
+                                    <a href="index.html#" class="social-icon icon-facebook add-tooltip" title="" data-original-title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-google-plus add-tooltip" title="" data-original-title="Google Plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-skype add-tooltip" title="" data-original-title="Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a href="index.html#" class="social-icon icon-linkedin add-tooltip" title="" data-original-title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div><!-- End .social-icons -->
+                            </figcaption>
+                        </figure>
+                        <h3>Анатолий Марков</h3>
+                        <p class="member-desc">(Руководитель сектора продаж)</p>
+                    </div><!-- End .team-member -->
+                </div><!-- End .owl-carousel -->
+
+            </div><!-- End .container -->
+
+            <div class="container">
+                <div class="divider bg-divider mt80 mb80">
+                    <span class="i fa fa-coffee"></span>
+                </div>
+            </div><!-- End .divider -->
+
+            <div class="mb50 hidden-xs"></div><!-- space -->
+            {% endblock %}
+
+    </div><!-- End #content -->
+
+

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+        <div id="content" role="main">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1888.5928953137868!2d37.50154736666342!3d55.74237808706497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5495717000f57%3A0xee7ccc955ffdb52f!2z0JHQsNCz0YDQsNGC0LjQvtC90L7QstGB0LrQuNC5INC_0YAt0LQsIDcsINCc0L7RgdC60LLQsCwgMTIxMzA5!5e0!3m2!1sru!2sru!4v1489606666575" width="580" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div><!-- End .col-sm-6 -->
+
+                    <div class="mb10 visible-xs"></div><!-- space -->
+
+                    <div class="col-sm-6">
+                        <h2 class="title-underblock dark mb30">Обратная связь</h2>
+                        <form action="php/mail.php" method="post" id="contact-form">
+                            <div class="form-group">
+                                <label for="contactname" class="input-desc">Имя</label>
+                                <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Ваше имя" required>
+                            </div><!-- End .from-group -->
+                            <div class="form-group">
+                                <label for="contactemail" class="input-desc">Email</label>
+                                <input type="email" class="form-control" id="contactemail" name="contactemail" placeholder="Ваш email" required>
+                            </div><!-- End .from-group -->
+                            <div class="form-group">
+                                <label for="contactsubject" class="input-desc">Вопрос</label>
+                                <input type="text" class="form-control" id="contactsubject" name="contactsubject" placeholder="Ваш вопрос">
+                            </div><!-- End .from-group -->
+                            <div class="form-group">
+                                <label for="contactmessage" class="input-desc">Сообщение</label>
+                                <textarea class="form-control" rows="6" id="contactmessage" name="contactmessage" placeholder="Ваше сообщение" required></textarea>
+                            </div><!-- End .from-group -->
+
+                            <div class="mb10"></div><!-- space -->
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-custom btn-block" data-loading-text="Sending..." value="Отправить сообщение">
+                            </div><!-- End .from-group -->
+                        </form>
+                    </div><!-- End .col-sm-6 -->
+
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+
+            <div class="mb30"></div><!-- space -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+
+                        <h3 class="mb20">Контактная информация :</h3>
+                        <ul class="contact-list">
+                            <li><strong>Офис:</strong> Кемерово, проспект Ленина 139 корпус 3</li>
+                            <li><strong>Email:</strong> <a href="mailto:vostokinwest@yandex.ru">vostokinwest@yandex.ru</a></li>
+                            <li><strong>Телефон:</strong> +7 (904)-997-71-19</li>
+                        </ul>
+
+                    </div><!-- End .col-sm-4 -->
+
+                    <div class="col-sm-4">
+
+                        <h4 class="mb30">Мы в соц сетях :</h4>
+                        <div class="social-icons">
+                            <a href="contact6.html#" class="social-icon icon-facebook add-tooltip first" data-placement="top" title="Like us on Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="contact6.html#" class="social-icon icon-twitter add-tooltip" data-placement="top" title="Find us at Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="contact6.html#" class="social-icon icon-google-plus add-tooltip" data-placement="top" title="Find us at Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div><!-- End .social-icons -->
+                    </div><!-- End .col-sm-4 -->
+                    
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+
+            <div class="mb5 visible-xs"></div><!-- space -->
+
+        </div><!-- End #content -->
+{% endblock %}
