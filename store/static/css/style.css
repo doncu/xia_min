@@ -12087,6 +12087,7 @@ label.error {
 
 .zoomWindowContainer > div {
 	border:2px solid #eaeaea;
+	visibility: hidden;
 }
 
 .product-gallery-container {
