@@ -9,13 +9,6 @@
                         <img src="{{ url_for ('image', filename=item.img_url_2)}}" alt="Product image" class="product-image-hover">
                     </a>
                 </figure>
-                <div class="product-action-container each-btn-animate">
-                    <a href="#" class="btn btn-dark add-to-favorite" title="Add to favorite"><i class="fa fa-heart"></i></a>
-
-                    <a href="#" class="btn btn-dark add-to-wishlist" title="Add to wishlist"><i class="fa fa-gift"></i></a>
-
-                    <a href="#" class="btn btn-dark quick-view" title="Quick View"><i class="fa fa-search-plus"></i></a>
-                </div><!-- end .product-action-container -->
             </div><!-- End .product-top -->
             <h3 class="product-title"><a href="product.html" title="Product Title">{{ item.title }}</a></h3>
             <div class="ratings-container">
@@ -26,8 +19,7 @@
                 </a><!-- End .product-ratings -->
             </div><!-- End .ratings-container -->
             <div class="product-price-container">
-                <span class="product-old-price">$125.99</span>
-                <span class="product-price">$49.99</span>
+                <span class="product-price">{{ item.price }} руб</span>
             </div><!-- End .product-price-container -->
 
             <a href="#" class="btn btn-custom add-to-cart">Добавить в корзину</a>
@@ -54,15 +46,14 @@
 
                         <div class="widget">
                             <h3>Категории</h3>
-
-                            <ul id="category-widget">
-                                <li class="open"><a href="#">Серия <span class="category-widget-btn"></span></a>
-                                    <ul>
-                                        <li><a href="category-left-sidebar.html#"><i class="fa fa-angle-right"></i>Redmi</a></li>
-                                        <li><a href="category-left-sidebar.html#"><i class="fa fa-angle-right"></i>Mi</a></li>
-                                        <li><a href="category-left-sidebar.html#"><i class="fa fa-angle-right"></i>Pro</a></li>
-                                    </ul>
-                                </li>
+                            <ul id="category-widget" class="text-center">
+                                <li class="open"><a href="">Модель: <span class="category-widget-btn"></span></a>
+                                <ul id="portfolio-filter">
+                                    <li><a href="#" data-filter=".mi5">Mi5</a></li>
+                                    <li><a href="#" data-filter=".mi5s">Mi5s</a></li>
+                                    <li><a href="#" data-filter=".redmi4">Redmi 4</a></li>
+                                    <li><a href="#" data-filter=".mi6">Mi6</a></li>
+                                </ul>
                             </ul>
                         </div><!-- End .widget -->
                     </aside>

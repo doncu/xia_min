@@ -11781,14 +11781,20 @@ label.error {
 }
 
 .product-price-container {
-	margin-bottom:15px;
+	margin-bottom:10px;
 }
 
 .product-price {
 	font-size:15px;
 	line-height: 20px;
-	color:#f44336;
-	font-weight: 700;
+	color:#000000;
+	font-weight: 500;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 .product-old-price {
@@ -12238,7 +12244,7 @@ label.error {
 
 .product-details .product-price {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	margin-left:7px;
 }
 
@@ -13554,12 +13560,6 @@ noUi-target,
 	padding:4px 8px;
 	margin:0 4px 8px;
 	border:1px solid #505050;
-}
-
-#portfolio-filter li a:after {
-	content:'/';
-	padding:0 9px;
-	color:#777;
 }
 
 #portfolio-filter.bordered li a:after {
