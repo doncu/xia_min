@@ -16,6 +16,7 @@ from store.app import app
 import config
 
 
+
 @app.route('/', endpoint='index')
 def index_view():
     return render_template('index.html')
@@ -28,19 +29,19 @@ def about_us_view():
 
 @app.route('/test')
 def test():
-    #data = dict(phones=db.session.query(models.Phones).order_by(models.Phones.id).all())
+    # data = dict(phones=db.session.query(models.Phones).order_by(models.Phones.id).all())
     return render_template('production.html')
 
 
 @app.route('/products/')
 def category_view():
-    phones = db.session.query(models.Phones).order_by(models.Phones.id).all()
+    phones = db.session.query(models.Phone).order_by(models.Phone.id).all()
     return render_template('products.html', phones=phones)
 
 
 @app.route('/product/<int:oid>')
 def product_view(oid):
-    phone = db.session.query(models.Phones).get(oid)
+    phone = db.session.query(models.Phone).get(oid)
     return render_template('product.html', item=phone)
 
 

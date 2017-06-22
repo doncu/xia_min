@@ -88,9 +88,7 @@
                         <!-- Tab Panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="description">
-                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius officia, beatae recusandae nobis accusantium deserunt cum voluptate eum soluta, sapiente tempora amet neque reprehenderit labore, iste suscipit. Placeat, voluptates.</span><span>Ipsa eius quaerat amet dolorum doloribus cum hic cupiditate laboriosam sit rerum cumque, blanditiis, tempore esse, vero accusantium repellendus a libero repellat iusto aliquam natus velit corrupti incidunt. Quo, tenetur.</span></p>
-                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, vero iure tempora dicta! Quidem iusto saepe, debitis dicta nisi eligendi nulla odit, quasi enim. Quasi voluptatibus, nobis laborum quaerat ipsum.</span></p>
-                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae excepturi doloremque odit id possimus explicabo, nemo aliquid tenetur nisi mollitia aspernatur harum libero, eum aperiam voluptates minima. Architecto, eveniet.</span><span>Vitae, impedit aspernatur vel deleniti suscipit rem corporis dignissimos consequatur commodi sapiente, aliquid, reprehenderit architecto beatae. Numquam dolorum quod iusto, facere eaque accusamus dignissimos veritatis fugiat eum magni soluta rem.</span></p>
+                                <p><span>{{ item.description }}</span></p>
                             </div><!-- End .tab-pane -->
                         </div><!-- End .tab-content -->
                     </div><!-- end role[tabpanel] -->
@@ -104,70 +102,8 @@
                         <div class="product-top">
                             <figure>
                                 <a href="product.html" title="Product Name">
-                                    <img src="{{ url_for ('static', filename='images/products/product6.jpg')}}" alt="Product image" class="product-image">
-                                    <img src="{{ url_for ('static', filename='images/products/product6-hover.jpg')}}" alt="Product image" class="product-image-hover">
-                                </a>
-                            </figure>
-                            <div class="product-action-container product-action-animate">
-                                <a href="product.html#" class="btn btn-dark add-to-favorite" title="Add to favorite"><i class="fa fa-heart"></i></a>
-
-                                <a href="product.html#" class="btn btn-dark add-to-wishlist" title="Add to wishlist"><i class="fa fa-gift"></i></a>
-
-                                <a href="product.html#" class="btn btn-dark quick-view" title="Quick View"><i class="fa fa-search-plus"></i></a>
-                            </div><!-- end .product-action-container -->
-                        </div><!-- End .product-top -->
-                        <h3 class="product-title"><a href="product.html" title="Product Title">Clear - New Season Shirt</a></h3>
-                        <div class="ratings-container">
-                            <a href="product.html#" class="product-ratings add-tooltip" title="3.75 Average">
-                                <span class="ratings" style="width:75%" >
-                                    <span class="ratings-text sr-only">81 Rating</span>
-                                </span><!-- End .ratings -->
-                            </a><!-- End .product-ratings -->
-                        </div><!-- End .ratings-container -->
-                        <div class="product-price-container">
-                            <span class="product-old-price">$125.99</span>
-                        </div><!-- End .product-price-container -->
-
-                        <a href="product.html#" class="btn btn-custom add-to-cart">Add to Cart</a>
-                    </div><!-- End .product -->
-
-                    <div class="product text-center">
-                        <div class="product-top">
-                            <figure>
-                                <a href="product.html" title="Product Name">
-                                    <img src="{{ url_for ('static', filename='images/products/product3.jpg')}}" alt="Product image" class="product-image">
-                                    <img src="{{ url_for ('static', filename='images/products/product3-hover.jpg')}}" alt="Product image" class="product-image-hover">
-                                </a>
-                            </figure>
-                            <div class="product-action-container product-action-animate">
-                                <a href="product.html#" class="btn btn-dark add-to-favorite" title="Add to favorite"><i class="fa fa-heart"></i></a>
-
-                                <a href="product.html#" class="btn btn-dark add-to-wishlist" title="Add to wishlist"><i class="fa fa-gift"></i></a>
-
-                                <a href="product.html#" class="btn btn-dark quick-view" title="Quick View"><i class="fa fa-search-plus"></i></a>
-                            </div><!-- end .product-action-container -->
-                        </div><!-- End .product-top -->
-                        <h3 class="product-title"><a href="product.html" title="Product Title">Clear - New Season Shirt</a></h3>
-                        <div class="ratings-container">
-                            <a href="product.html#" class="product-ratings add-tooltip" title="3.75 Average">
-                                <span class="ratings" style="width:75%" >
-                                    <span class="ratings-text sr-only">81 Rating</span>
-                                </span><!-- End .ratings -->
-                            </a><!-- End .product-ratings -->
-                        </div><!-- End .ratings-container -->
-                        <div class="product-price-container">
-                            <span class="product-old-price">$200.99</span>
-                        </div><!-- End .product-price-container -->
-
-                        <a href="product.html#" class="btn btn-custom add-to-cart">Add to Cart</a>
-                    </div><!-- End .product -->
-
-                    <div class="product text-center">
-                        <div class="product-top">
-                            <figure>
-                                <a href="product.html" title="Product Name">
-                                    <img src="{{ url_for ('static', filename='images/products/product7.jpg')}}" alt="Product image" class="product-image">
-                                    <img src="{{ url_for ('static', filename='images/products/product7-hover.jpg')}}" alt="Product image" class="product-image-hover">
+                                    <img src="{{ url_for ('static', filename='images/products/product1.jpg')}}" alt="Product image" class="product-image">
+                                    <img src="{{ url_for ('static', filename='images/products/product1-hover.jpg')}}" alt="Product image" class="product-image-hover">
                                 </a>
                             </figure>
                             <div class="product-action-container product-action-animate">
@@ -218,6 +154,37 @@
                             </a><!-- End .product-ratings -->
                         </div><!-- End .ratings-container -->
                         <div class="product-price-container">
+                            <span class="product-old-price">$200.99</span>
+                        </div><!-- End .product-price-container -->
+
+                        <a href="product.html#" class="btn btn-custom add-to-cart">Add to Cart</a>
+                    </div><!-- End .product -->
+
+                    <div class="product text-center">
+                        <div class="product-top">
+                            <figure>
+                                <a href="product.html" title="Product Name">
+                                    <img src="{{ url_for ('static', filename='images/products/product10.jpg')}}" alt="Product image" class="product-image">
+                                    <img src="{{ url_for ('static', filename='images/products/product10-hover.jpg')}}" alt="Product image" class="product-image-hover">
+                                </a>
+                            </figure>
+                            <div class="product-action-container product-action-animate">
+                                <a href="product.html#" class="btn btn-dark add-to-favorite" title="Add to favorite"><i class="fa fa-heart"></i></a>
+
+                                <a href="product.html#" class="btn btn-dark add-to-wishlist" title="Add to wishlist"><i class="fa fa-gift"></i></a>
+
+                                <a href="product.html#" class="btn btn-dark quick-view" title="Quick View"><i class="fa fa-search-plus"></i></a>
+                            </div><!-- end .product-action-container -->
+                        </div><!-- End .product-top -->
+                        <h3 class="product-title"><a href="product.html" title="Product Title">Clear - New Season Shirt</a></h3>
+                        <div class="ratings-container">
+                            <a href="product.html#" class="product-ratings add-tooltip" title="3.75 Average">
+                                <span class="ratings" style="width:75%" >
+                                    <span class="ratings-text sr-only">81 Rating</span>
+                                </span><!-- End .ratings -->
+                            </a><!-- End .product-ratings -->
+                        </div><!-- End .ratings-container -->
+                        <div class="product-price-container">
                             <span class="product-old-price">$125.99</span>
                         </div><!-- End .product-price-container -->
 
@@ -249,6 +216,37 @@
                             </a><!-- End .product-ratings -->
                         </div><!-- End .ratings-container -->
                         <div class="product-price-container">
+                            <span class="product-old-price">$125.99</span>
+                        </div><!-- End .product-price-container -->
+
+                        <a href="product.html#" class="btn btn-custom add-to-cart">Add to Cart</a>
+                    </div><!-- End .product -->
+
+                    <div class="product text-center">
+                        <div class="product-top">
+                            <figure>
+                                <a href="product.html" title="Product Name">
+                                    <img src="{{ url_for ('static', filename='images/products/product5.jpg')}}" alt="Product image" class="product-image">
+                                    <img src="{{ url_for ('static', filename='images/products/product5-hover.jpg')}}" alt="Product image" class="product-image-hover">
+                                </a>
+                            </figure>
+                            <div class="product-action-container product-action-animate">
+                                <a href="product.html#" class="btn btn-dark add-to-favorite" title="Add to favorite"><i class="fa fa-heart"></i></a>
+
+                                <a href="product.html#" class="btn btn-dark add-to-wishlist" title="Add to wishlist"><i class="fa fa-gift"></i></a>
+
+                                <a href="product.html#" class="btn btn-dark quick-view" title="Quick View"><i class="fa fa-search-plus"></i></a>
+                            </div><!-- end .product-action-container -->
+                        </div><!-- End .product-top -->
+                        <h3 class="product-title"><a href="product.html" title="Product Title">Clear - New Season Shirt</a></h3>
+                        <div class="ratings-container">
+                            <a href="product.html#" class="product-ratings add-tooltip" title="3.75 Average">
+                                <span class="ratings" style="width:75%" >
+                                    <span class="ratings-text sr-only">81 Rating</span>
+                                </span><!-- End .ratings -->
+                            </a><!-- End .product-ratings -->
+                        </div><!-- End .ratings-container -->
+                        <div class="product-price-container">
                             <span class="product-price">$49.99</span>
                         </div><!-- End .product-price-container -->
 
@@ -259,8 +257,8 @@
                             <span class="product-box new-box new-box-border">New</span>
                             <figure>
                                 <a href="product.html" title="Product Name">
-                                    <img src="{{ url_for ('static', filename='images/products/product1.jpg')}}" alt="Product image" class="product-image">
-                                    <img src="{{ url_for ('static', filename='images/products/product1-hover.jpg')}}" alt="Product image" class="product-image-hover">
+                                    <img src="{{ url_for ('static', filename='images/products/product11.jpg')}}" alt="Product image" class="product-image">
+                                    <img src="{{ url_for ('static', filename='images/products/product11-hover.jpg')}}" alt="Product image" class="product-image-hover">
                                 </a>
                             </figure>
                             <div class="product-action-container product-action-animate">

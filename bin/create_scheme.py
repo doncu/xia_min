@@ -8,3 +8,4 @@ if __name__ == '__main__':
     from store import db
     db.import_all()
     db.Base.metadata.create_all(db.engine)
+
